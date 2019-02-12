@@ -1,2 +1,22 @@
 ---
-# defaults file for vmw-vm-rhel-mssql
+# NOTE: meta.name(space) come from CR metadata when run with Ansible Operator
+# deploy/crds has an example CR for reference
+rhn_username: "{{ meta.rhn_username }}"
+rhn_password: "{{ meta.rhn_password }}"
+rhn_poolid: "{{ meta.rhn_poolid }}"
+mssql_ip: "{{ meta.mssql_ip }}"
+mssql_user: "{{ meta.mssql_user }}"
+msssql_password: "{{ meta.mssql_password }}"
+mssql_db_name: "{{ meta.mssql_db_name }}"
+mssql_port: "{{ meta.mssql_port }}"
+vmw_datacenter: "{{ meta.vmw_datacenter }}"
+vmw_vm_folder:  "{{ meta.vmw_vm_folder }}"
+vmw_vm_name:  "{{ meta.vmw_vm_name }}"
+vmw_vm_state: poweredon
+vmw_vm_template:  "{{ meta.vmw_vm_templete }}"
+vmw_datastore:  "{{ meta.vmw_datastore }}"
+vmw_vm_memory:  "{{ meta.vmw_vm_memory }}"
+vmw_vm_num_cpu:  "{{ meta.vmw_vm_num_cpu }}"
+vmw_vm_num_cores:  "{{ meta.vmw_vm_num_cores }}"
+vmw_vm_network:  "{{ meta.vmw_vm_network }}"
+vmw_count: 1
