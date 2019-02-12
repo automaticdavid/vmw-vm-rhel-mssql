@@ -3,5 +3,5 @@
     name: vmware
 - include_role: 
     name: mssql
-    delegate_to: "{{ mssql_ip }}"
-    run_once: yes
+  delegate_to: "{{ mssql_ip }}"
+  run_once: yes
