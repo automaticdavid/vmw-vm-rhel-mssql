@@ -1,2 +1,5 @@
 ---
-# tasks file for vmw-vm-rhel-mssql
+- include_role: 
+    name: vmware
+- include_role: 
+    name: mssql
