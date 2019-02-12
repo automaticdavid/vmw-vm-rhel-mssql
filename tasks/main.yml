@@ -1,6 +1,8 @@
 ---
 - include_role: 
     name: vmware
+- debug:
+    var: mssql_ip
 - include_role: 
     name: mssql
   delegate_to: "{{ mssql_ip }}"
