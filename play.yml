@@ -1,0 +1,22 @@
+
+---
+- name: Provision VM
+  hosts: localhost
+  gather_facts: no
+
+  tasks:
+  
+    - name: Test Role
+      include_role:
+        name: vmware
+
+
+- name: Setup MSSQL
+  hosts: "{{ created_vm_ip }}"
+  gather_facts: no
+
+  tasks:
+  
+    - name: Test Role
+      include_role:
+        name: mssql
