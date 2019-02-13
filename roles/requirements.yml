@@ -1,0 +1,6 @@
+- src: git+https://github.com/automaticdavid/vmware.git
+  version: devel
+  name: vmware
+- src: git+https://github.com/automaticdavid/mssql.git
+  version: master
+  name: mssql

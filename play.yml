@@ -12,7 +12,7 @@
 
 
 - name: Setup MSSQL
-  hosts: "{{ hostvars['localhost'][created_vm_ip] }}"
+  hosts: "{{ hostvars['localhost']['created_vm_ip'] }}"
   gather_facts: no
 
   tasks:
