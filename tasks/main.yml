@@ -2,8 +2,8 @@
 - include_role: 
     name: vmware
 - debug:
-    var: mssql_ip
+    var: created_vm_ip
 - include_role: 
     name: mssql
-  delegate_to: "{{ mssql_ip }}"
+  delegate_to: "{{ created_vm_ip }}"
   run_once: yes
